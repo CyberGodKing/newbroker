@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-django = "^4.2.4"
+django = "^3.2"
 dj-database-url = "^2.1.0"
 gunicorn = "^21.2.0"
 whitenoise = "^6.5.0"
