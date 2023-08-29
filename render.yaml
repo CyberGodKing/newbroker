@@ -8,7 +8,7 @@ services:
    name: broker
    runtime: python
    buildCommand: "./build.sh"
-   startCommand: "gunicorn broker.wsgi:application"
+   startCommand: "gunicorn broker.wsgi"
    envVars:
     -key: DATABASE_URL
       fromDatabase:
