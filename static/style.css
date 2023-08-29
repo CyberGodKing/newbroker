@@ -1,0 +1,295 @@
+body{
+    position: sticky;
+    background-color: #16181c;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  width: 3px;
+  background: transparent;
+}
+
+.colsx {
+    display:flex;
+    justify-content: center;
+
+}
+.card1-font{
+  font-weight: 800;
+  font-size: 30px;
+  color: #c6c7ca;
+}
+.navbar{
+    width: 100%;
+}
+.drop{
+  color: white;
+  background-color: transparent;
+}
+.drop:hover{
+  color: white;
+  background-color: orange;
+}
+footer{
+    
+    bottom: 0;
+    width: 100%;
+    height:50px;
+    background-color: rgb(12, 245, 245);
+}
+.logo{
+  border-radius: 25px;
+}
+.login-button{
+  background-color: orange;
+  border-radius: 25px;
+  border: 0%;
+  color: white;
+  width: 100px;
+  height: 100%;
+}
+.card-color{
+  background-color: black;
+}
+.login-button:hover{
+  background-color: white;
+  border-radius: 25px;
+  border: 0%;
+  color: rgb(8, 8, 8);
+  width: 110px;
+  height: 110%;
+}
+.contai{
+  overflow-x: hidden;
+}
+.pad-imgxx{
+  width: 400px;
+  height: 200px;
+}
+@media (max-width: 720px) {
+  .pad-imgxx{
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    border: 4px solid orange;
+    justify-self: center;
+  }
+}
+.pad-img{
+  width: 400px;
+  height: 200px;
+}
+@media (max-width: 720px) {
+  .pad-img{
+    width: 600%;
+    height: 200px;
+    border-radius: 25px;
+  }
+}
+.pad-img2{
+  width: 350px;
+  height: 400px;
+}
+@media (max-width: 720px) {
+  .pad-img2{
+    width: 600%;
+    height: 400px;
+    border-radius: 25px;
+  }
+}
+.pad-carousel{
+  width: 100%;
+  height: 400px;
+  border-radius: 25px;
+}
+@media (max-width: 720px) {
+  .pad-carousel{
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+  }
+}
+@media (max-width: 720px) {
+  .login-button {
+      display: none;
+  }
+}
+
+.login-button2{
+  background-color: orange;
+  border-radius: 25px;
+  border: 0%;
+  color: white;
+  width: 100px;
+  height: 100%;
+}
+.login-button2:hover{
+  background-color: rgb(247, 162, 4);
+  border-radius: 25px;
+  border: 0%;
+  color: rgb(8, 8, 8);
+  width: 110px;
+  height: 110%;
+}
+.text_align{
+  text-align: right;
+  color: white;
+  font-size: 16px;
+}
+.text_align1{
+  text-align: left;
+  color: white;
+  font-size: 16px;
+}
+.text_align2{
+  text-align: center;
+}
+.btn1{
+  height: 110px;
+  width: 110px;
+  border-radius: 55px;
+  align-items: center;
+  border-color: #16181c;
+  border-width:15px;
+  outline: 4px solid orange;
+  outline-offset: -2px;
+}
+.hid-phone{
+  text-align: center;
+}
+@media (max-width: 720px) {
+  .hid-phone{
+    display: none;
+  }
+}
+
+.bg-col{
+  background-color: #1f1f20;
+}
+.col-style{
+  border-radius: 25px;
+  border: 20px solid transparent;
+}
+.card-text33{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+  color: white;
+  font-weight: 700;
+}
+.col-width{
+  justify-content: center;
+  width: 370px;
+  background-color: transparent;
+}
+.bg-card{
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background-color: #1f1f20;
+}
+marquee{
+  width: 300px;
+  overflow-x: scroll;
+  height: 300px;
+}
+.table-title{
+  width: 100px;
+}
+table{
+  width: 100px;
+  overflow-x: hidden;
+}
+.col-length{
+  width: 450px;
+}
+.row-width{
+  width: 1024px;
+}
+.card-size2{
+  width: 450px;
+}
+thead{
+  color: white;
+  width: 200px;
+}
+tbody{
+  color: white;
+  width: 100px;
+}
+.warning-text{
+  color: white;
+}
+.reg-color{
+  background-color: orange;
+  color: white;
+}
+.miney-img{
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  border: 3px solid orange;
+  border-radius: 50px;
+  margin-top: -30px;
+}
+.link-style{
+  text-decoration: none;
+  color: orange;
+}
+.hr-line{
+  border: 4px solid orange;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.name-input{
+  background-color: #16181c;
+  color: white;
+  border-radius: 25px;
+  border: 2px solid orange;
+  width: 200px;
+  font-size: 20px;
+}
+.name-input:hover{
+  background-color: #16181c;
+  color: white;
+  border-radius: 25px;
+  border: 2px solid rgb(172, 125, 39);
+  width: 220px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.message-input{
+  background-color: #16181c;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid orange;
+  width: 200px;
+  height: 100px;
+}
+.message-input:hover{
+  background-color: #16181c;
+  color: white;
+  border-radius: 10px;
+  border: 5px solid rgb(172, 125, 39);
+  width: 220px;
+  transition: 1s;
+}
+.send-button{
+  color: white;
+  background-color: orange;
+  border-radius: 25px;
+  width: 120px;
+}
+.send-button:hover{
+  color: orange;
+  background-color: white;
+  border-radius: 25px;
+  border: 3px solid orange;
+  width: 150px;
+  transition: 0.5s;
+
+}
+.footer-text{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}

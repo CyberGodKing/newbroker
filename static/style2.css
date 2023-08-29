@@ -1,0 +1,131 @@
+body{
+    position: sticky;
+    background-color: #16181c;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  width: 3px;
+  background: transparent;
+}
+.logo-style{
+    border-radius: 50px;
+}
+.sign-btn{
+    color: white;
+    background-color: transparent;
+    border: 0px solid transparent;
+    width: 150px;
+    height: 50px;
+}
+.signup-btn{
+    color: white;
+    background-color: blue;
+    border: 0px solid transparent;
+    width: 150px;
+    height: 50px;
+}
+.col-color{
+    background-color: black;
+}
+.link-style{
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 720px) {
+    .link-style{
+        display: none;
+    }
+}
+.col-img{
+    width: 100%;
+    height: 150px;
+    background-image: url(images/coin1.png);
+    backdrop-filter: blur(8px);
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.text-setting{
+    top: 40%;
+    bottom: 50%;
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+.line{
+    border: 4px solid rgb(243, 4, 4);
+    width: 20px;
+    top: 50%;
+    bottom: 50%;
+    align-self: center;
+
+}
+.accord{
+    background-color: rgb(51, 50, 50);
+    color: white;
+    border-color: aliceblue;
+
+}
+.accord:hover{
+    background-color: rgb(51, 50, 50);
+    color: white;
+    border-color: aliceblue;
+}
+.col-img2{
+    width: 100%;
+    height: 200px;
+    background-image: url(images/coin2.jpg);
+    backdrop-filter: blur(8px);
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 25px; 
+    filter: brightness(120%); 
+}
+.text-setting2{
+    top: 4%;
+    bottom: 50%;
+    position: relative;
+    font-size: 16px;
+    font-weight: 800;
+    border-color: rgb(180, 208, 233);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    filter: brightness(200%);
+}
+.forn{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.forn2{
+    font-weight: 800;
+}
+.btn-s{
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+}
+.lin{
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+.text2{
+    text-align: center;
+    color: white;
+}
+.text-menu{
+    text-align: left;
+    color: #FFFFFF8C;
+    text-decoration: none;
+    
+}
+.card-text{
+    color: #FFFFFF8C;
+    background-color: rgb(10, 10, 77);
+}
+.download{
+    
+}
