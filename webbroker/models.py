@@ -1,6 +1,6 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
-from django_countries.fields import CountryField
+#from django_countries.fields import CountryField
 from django.conf import settings
 from django.core import validators
 from django.core.exceptions import ValidationError
