@@ -10,7 +10,6 @@ from .forms import ContactForm,RegisterUserForm,PasswordForm
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User 
 # Create your views here.
-import requests,secrets,random
 import datetime,time
 from .models import Contact
 
