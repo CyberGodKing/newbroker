@@ -12,7 +12,11 @@ from django.contrib.auth.models import User
 # Create your views here.
 import datetime,time
 from .models import Contact
+#from django.shortcuts import render
 
+def custom_500(request):
+    return render(request, '500.html', status=500)
+ 
 def home(request):
     return render(request,"base.html",{})
 
