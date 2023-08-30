@@ -19,7 +19,8 @@ from django.urls import path
 from webbroker import views
 from django.conf import settings
 from django.conf.urls.static import static
-
+from django.conf.urls import handler500
+handler500 = 'webbroker.views.custom_500'
 urlpatterns = [
     path('trader/adminManager/', admin.site.urls),
     path('home/', views.home, name="home" ),
