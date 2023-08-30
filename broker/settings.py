@@ -26,8 +26,10 @@ SECRET_KEY = 'django-insecure-hqc7+^)xs(a%xh1+3n4xum$sds-ax-%cpi#-p*qa@#ryai1th#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["hooebrokerweb.onrender.com","127.0.0.1"]
-
+ALLOWED_HOSTS = []
+RENDER_EXTERNAL_HOSTNAME = 'hooebrokerweb.onrender.com'
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 # Application definition
 
