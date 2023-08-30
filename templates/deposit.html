@@ -47,13 +47,16 @@
                                         <p class="card-title f2 mx-1">
                                             CURRENCY
                                         </p>
-                                        <select class="form-control">
-                                            <option value="1">BTC</option>
-                                            <option value="2">USD</option>
-                                            <option value="3">ETH</option>
-                                            <option value="3">EOS</option>
-                                            <option value="1">BitcoinCash</option>
-                                        </select>
+                                       <div class="dropdown show ">
+                                            <a class="btn btn-secondary dropdown-toggle form-control" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              BITCOIN
+                                            </a>
+                                          
+                                            <div class="dropdown-menu form-control" aria-labelledby="dropdownMenuLink" style="background-color: #7c7c7c; color:white">
+                                              <a class="dropdown-item drop" href={% url 'eth' %}>ETHEREUM</a>
+                                              <a class="dropdown-item drop" href={% url 'btc' %}>BITCOIN CASH</a>
+                                            </div>
+                                          </div> 
                                     </h6>
                                     <h6 class="card-title mt-0 text_aligsn2 mb-3 mx-1 mt-2">
                                         <p class="card-title f2 mx-1">
