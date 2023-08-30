@@ -125,7 +125,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,"static")]
 STATIC_ROOT = BASE_DIR/"staticfiles"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 DATABASES={
-    'default':dj_database_url.config(conn_max_age=500)
+    'default':dj_database_url.parse("postgres://borker_user:JM08EQvIQxbL2OYlGo4RGN0KhOuUJVuE@dpg-cjneoq0cfp5c739f2okg-a/borker")
 }
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
