@@ -24,7 +24,8 @@ def terms(request):
 
 def academy(request):
     return render(request,"sections/academy.html")
-
+def passwordreset(request):
+    return render(request,"passwordreset.html")
 def loginuser(request):
     if request.method=="POST":
         user_email=request.POST['email']
@@ -150,3 +151,17 @@ def downline(request):
         return render(request,"downline.html",{"text":text})
     else:
         return redirect("login")
+def eth(request):
+    if request.user.is_authenticated == True:
+        #text="Downline"
+        return render(request,"eth.html",{})
+    else:
+        return redirect("login")
+def bitcoin(request):
+    if request.user.is_authenticated == True:
+        #text="Downline"
+        return render(request,"btc_cash.html",{})
+    else:
+        return redirect("login")
+
+
