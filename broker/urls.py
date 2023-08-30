@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from webbroker import views
+from django.conf import settings
 
 urlpatterns = [
     path('trader/adminManager/', admin.site.urls),
