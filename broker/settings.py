@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+from django.conf.urls import handler500
 from pathlib import Path
 import os
 import dj_database_url
@@ -22,7 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-hqc7+^)xs(a%xh1+3n4xum$sds-ax-%cpi#-p*qa@#ryai1th#'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
@@ -121,7 +120,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-
+handler500 = 'webbroker.views.custom_500'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,"static")]
 STATIC_ROOT = BASE_DIR/"staticfiles"
