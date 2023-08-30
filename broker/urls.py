@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from webbroker import views
 from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('trader/adminManager/', admin.site.urls),
@@ -38,4 +39,4 @@ urlpatterns = [
     path('account/withdrawal/', views.withdraw, name="withdraw" ),
     path('account/history/', views.history, name="history" ),
     path('account/downline/', views.downline, name="downline" ),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
