@@ -19,8 +19,9 @@ from django.urls import path
 from webbroker import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('trader/adminManager/', admin.site.urls),
     path('home/', views.home, name="home" ),
+    path('/', views.home, name="home" ),
     path('faq/', views.faq, name="faq" ),
     path('term&conditions/', views.terms, name="terms" ),
     path('academy/', views.academy, name="academy" ),
