@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,"static")]
 STATIC_ROOT = BASE_DIR/"staticfiles"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 DATABASES={
     'default':dj_database_url.parse("postgres://borker_user:JM08EQvIQxbL2OYlGo4RGN0KhOuUJVuE@dpg-cjneoq0cfp5c739f2okg-a.oregon-postgres.render.com/borker",conn_max_age=500)
 }
