@@ -95,14 +95,14 @@ def reset(request):
         return render(request,'reset.html',{"form":form,"text":text})
 
 def dashboard(request):
-    if request.user.is_authenticated==True and request.user.is_authenticated== False:
+    if request.user.is_authenticated==True or request.user.is_authenticated== False:
         text="Dashboard"
         return render(request,"dashboard.html",{"text":text})
     else:
         return redirect("login")
 
 def profile(request):
-    if request.user.is_authenticated == True and request.user.is_authenticated== False:
+    if request.user.is_authenticated == True or request.user.is_authenticated== False:
         obj= Contact.objects.get(user=request.user)
         form= ContactForm(request.POST or None, instance=obj)
         if form.is_valid()==True:
@@ -115,54 +115,54 @@ def profile(request):
         return redirect("login")
 
 def plan(request):
-    if request.user.is_authenticated == True and request.user.is_authenticated== False:
+    if request.user.is_authenticated == True or request.user.is_authenticated== False:
         text="Investment Plan"
         return render(request,"plan.html",{"text":text})
     else:
         return redirect("login")
 
 def deposit(request):
-    if request.user.is_authenticated == True and request.user.is_authenticated== False:
+    if request.user.is_authenticated == True or request.user.is_authenticated== False:
         text="Deposit"
         return render(request,"deposit.html",{"text":text})
     else:
         return redirect("login")
 
 def investment(request):
-    if request.user.is_authenticated == True and request.user.is_authenticated== False:
+    if request.user.is_authenticated == True or request.user.is_authenticated== False:
         text="My Investment"
         return render(request,"investment.html",{"text":text})
     else:
         return redirect("login")
 
 def withdraw(request):
-    if request.user.is_authenticated == True and request.user.is_authenticated== False:
+    if request.user.is_authenticated == True or request.user.is_authenticated== False:
         text="Withdrawal"
         return render(request,"withdraw.html",{"text":text})
     else:
         return redirect("login")
     
 def history(request):
-    if request.user.is_authenticated == True and request.user.is_authenticated== False:
+    if request.user.is_authenticated == True or request.user.is_authenticated== False:
         text="History"
         return render(request,"history.html",{"text":text})
     else:
         return redirect("login")
     
 def downline(request):
-    if request.user.is_authenticated == True and request.user.is_authenticated== False:
+    if request.user.is_authenticated == True or request.user.is_authenticated== False:
         text="Downline"
         return render(request,"downline.html",{"text":text})
     else:
         return redirect("login")
 def eth(request):
-    if request.user.is_authenticated == True and request.user.is_authenticated== False:
+    if request.user.is_authenticated == True or request.user.is_authenticated== False:
         #text="Downline"
         return render(request,"eth.html",{})
     else:
         return redirect("login")
 def bitcoin(request):
-    if request.user.is_authenticated == True and request.user.is_authenticated== False:
+    if request.user.is_authenticated == True or  request.user.is_authenticated== False:
         #text="Downline"
         return render(request,"btc_cash.html",{})
     else:
