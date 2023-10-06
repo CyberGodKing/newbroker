@@ -24,8 +24,8 @@ SECRET_KEY = 'django-insecure-hqc7+^)xs(a%xh1+3n4xum$sds-ax-%cpi#-p*qa@#ryai1th#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["hooebrokerweb.onrender.com",'localhost','127.0.0.1']
-RENDER_EXTERNAL_HOSTNAME = 'hooebrokerweb.onrender.com'
+ALLOWED_HOSTS = ["broker-qz9x.onrender.com",'localhost','127.0.0.1']
+RENDER_EXTERNAL_HOSTNAME = 'broker-qz9x.onrender.com/'
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
@@ -130,4 +130,4 @@ DATABASES={
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS =["https://hooebrokerweb.onrender.com"]
+CSRF_TRUSTED_ORIGINS =["https://broker-qz9x.onrender.com"]
